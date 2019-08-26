@@ -16,7 +16,6 @@ const forecast = (latitude, longitude, callback) => {
             const precipProbability = body.daily.data[0].precipProbability;
             const temperatureLow = body.daily.data[0].temperatureLow;
             const temperatureMax = body.daily.data[0].temperatureMax;
-            console.log('---data: ' + JSON.stringify(body.daily.data[0]))
 
             callback(undefined, {
                 summary,

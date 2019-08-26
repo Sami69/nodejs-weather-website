@@ -66,8 +66,8 @@ app.get('/weather', (req, res) => {
                 temperatureLow: forecastData.temperatureLow,
                 temperatureMax: forecastData.temperatureMax,
                 precipProbability: forecastData.precipProbability,
-                location,
-                address: req.query.address
+                location: req.query.address,
+                address: location
             })
         })
     })

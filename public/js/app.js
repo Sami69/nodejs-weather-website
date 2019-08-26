@@ -39,8 +39,8 @@ weatherForm.addEventListener('submit', (e) => {
                 msgThree.textContent = 'Temperature min: ' + data.temperatureLow
                 msgFour.textContent = 'Temperature max: ' + data.temperatureMax
                 msgFive.textContent = 'Precipitation: ' + data.precipProbability
-                msgSix.textContent = 'Locatlisation: ' + data.address
-                msgSeven.textContent = 'Adresse: ' + data.location
+                msgSix.textContent = 'Locatlisation: ' + data.location
+                msgSeven.textContent = 'Adresse: ' + data.address
             }
             
         })
