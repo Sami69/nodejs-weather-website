@@ -33,14 +33,13 @@ weatherForm.addEventListener('submit', (e) => {
             if(data.error) {
                 msgOne.textContent = data.error
             } else {
-                msgOne.textContent = 'Sommaire: ' + data.forecast 
-                msgTwo.textContent = 'Temperature: ' + data.temperature
-                msgTwo.textContent = 'Temperature: ' + data.temperature
-                msgThree.textContent = 'Temperature minimal: ' + data.temperatureLow
-                msgFour.textContent = 'Temperature maximal: ' + data.temperatureHigh
-                msgFive.textContent = 'Precipitation: ' + data.precipProbability
-                msgSix.textContent = 'Locatlisation: ' + data.location
-                msgSeven.textContent = 'Adresse: ' + data.address
+                msgOne.textContent = 'Locatlisation: ' + data.location
+                msgTwo.textContent = 'Adresse: ' + data.address
+                msgThree.textContent = 'Temperature acutelle: ' + data.temperature
+                msgFour.textContent = 'Temperature minimal: ' + data.temperatureLow
+                msgFive.textContent = 'Temperature maximal: ' + data.temperatureHigh
+                msgSix.textContent = 'Precipitation: ' + data.precipProbability
+                msgSeven.textContent = 'Sommaire: ' + data.forecast 
             }
             
         })
