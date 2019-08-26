@@ -15,13 +15,15 @@ const forecast = (latitude, longitude, callback) => {
             const temperature = body.currently.temperature;
             const precipProbability = body.daily.data[0].precipProbability;
             const temperatureLow = body.daily.data[0].temperatureLow;
-            const temperatureMax = body.daily.data[0].temperatureMax;
+            const temperatureHigh = body.daily.data[0].temperatureHigh;
+
+            //console.log(body.daily.data[0])
 
             callback(undefined, {
                 summary,
                 temperature,
                 temperatureLow,
-                temperatureMax,
+                temperatureHigh,
                 precipProbability
             });
         }    
