@@ -1,5 +1,7 @@
+//Routing api
 const express = require('express');
 const path = require('path');
+//Template okufib that work with express
 const hbs = require('hbs');
 const geocode = require('./common/geocode');
 const forecast = require('./common/forecast');
